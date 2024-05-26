@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/HeroSection/Hero';
+import Header from './components/commonComponents/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SecondSec from './components/sectionSecond/SecondSec';
+import ThirdSec from './components/sectionThird/ThirdSec';
+import FourthSec from './components/sectionFourth/FourthSec';
+import WorkSec from './components/secFiveWorkSec.jsx/WorkSec';
+import Footer from './components/commonComponents/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <Hero/>
+    <SecondSec/>
+    <ThirdSec/>
+    <FourthSec/>
+    <WorkSec/>
+    <Footer/>
     </div>
   );
 }
