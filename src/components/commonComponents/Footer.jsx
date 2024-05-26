@@ -12,11 +12,11 @@ const Footer = () => {
       <div className="container border-y-2 border-[#a59c9c] py-4">
         <div className="grid grid-cols-12 items-center">
           <div className="lg:col-span-10 col-span-12">
-            <div className="flex items-center flex-wrap justify-center">
+            <div className="flex items-center flex-wrap lg:justify-start xl:justify-start justify-center">
               <div className="logo mb-lg-0 mb-xl-0 mb-2">
                 <img src={footerLogo} alt="footerlogo" />
               </div>
-              <div className="item_wrap flex flex-wrap justify-center">
+              <div className="item_wrap flex flex-wrap  justify-center">
                 <div className="item me-4">
                   <ul className='ps-xl-4 ps-lg-4 ps-md-4 ps-0'>
                     {['Company', 'About', 'FAQ'].map((list, index) => <li key={list} className={`text-white xl-text-base text-sm ${index === 0 ? "font-semibold text-lg mb-2" : ''}`}>{list}</li>)}
